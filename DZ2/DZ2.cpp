@@ -11,10 +11,10 @@ void main()
 	SetConsoleOutputCP(1251);
    
     int m = 5;
-    int mas[5] = { 10, 9, 1, 21, -12 };
+    int mas[5] = { 16, 14, -3, 21, 12 };
 
 
 	printArr(mas, m);
 	void(*z)(int* x, int size);
-	z = down(mas, m);
+	z = fun(mas, m);
 }

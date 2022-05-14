@@ -47,3 +47,30 @@ void printArr(int* arr, unsigned size) {
 	}
 	cout << endl;
 }
+
+int sum(int a, int b) {
+	int s = 0;
+	s = a + b;
+	return s;
+}
+
+int mapp(int* arr, unsigned size, int (*fun)(int, int)) {
+	int m = fun(arr[0], arr[1]);
+	for (unsigned i = 2; i < size; i++) {
+		m = fun(m, arr[i]);
+	}
+	return m;
+}
+
+void (*fun(int* mas, int m))(int* x, int size) {
+	if (mas[0] == mapp(mas, m, sum)) {
+		invers(mas, m);
+	}
+	else if (mas[0] < mapp(mas, m, sum)) {
+		up(mas, m);
+	}
+	else if (mas[0] > mapp(mas, m, sum)) {
+		down(mas, m);
+	}
+	return 0;
+}
